@@ -27,7 +27,7 @@ public class LoginPage {
     }
 
     @Step("Проверка заголовка страницы логина")
-    public void inputPage() {
+    public void checkLoginHeader() {
         isDisplayed = webDriver.findElement(enterHeader).isDisplayed();
         Assert.assertTrue(isDisplayed);
     }

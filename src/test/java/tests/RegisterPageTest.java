@@ -31,10 +31,13 @@ public class RegisterPageTest extends Setup {
         loginPage.waitUntilLoginFormVisible();
         loginPage.fillLoginForm(email, password);
         loginPage.clickSignInButtonLocator();
+        // Тут явная проверка с ассертом
+        loginPage.checkLoginHeader();
         // Костыль, но токен подтягивается не сразу :(
         Thread.sleep(5000);
         JavascriptExecutor js = (JavascriptExecutor) webDriver;
         token = (String) js.executeScript("let token = localStorage.accessToken;" + "if (token != null) {return token;}");
+
     }
 
     @Test

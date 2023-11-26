@@ -17,15 +17,15 @@ public class MainPage {
     //Локатор кнопки "Булки" без фокуса на разделе
     private final By bunsButton = By.xpath("//div[span[text()='Булки']]");
     //Локатор кнопки "Булки" с фокусом на разделе
-    private final By activeBunsButton = By.xpath("//span[text()='Булки']");
+    private final By bunsHeader = By.xpath("//h2[text()='Булки']");
     //Локатор кнопки "Соусы" без фокуса на разделе
     private final By saucesButton = By.xpath("//div[span[text()='Соусы']]");
     //Локатор кнопки "Соусы" с фокусом на разделе
-    private final By activeSaucesButton = By.xpath("//span[text()='Соусы']");
+    private final By saucesHeader = By.xpath("//h2[text()='Соусы']");
     //Локатор кнопки "Начинки" без фокуса на разделе
     private final By fillingsButton = By.xpath("//*[text()='Начинки']");
     //Локатор кнопки "Начинки" с фокусом на разделе
-    private final By activeFillingsButton = By.xpath("//span[text()='Начинки']");
+    private final By fillingsHeader = By.xpath("//h2[text()='Начинки']");
     // Локатор логотипа "Stellar Burgers"
     private final By logo = By.xpath("//div[@class = 'AppHeader_header__logo__2D0X2']");
 
@@ -66,21 +66,21 @@ public class MainPage {
     @Step("Перейти в раздел Булки")
     public void clickOnBunsButton() {
         webDriver.findElement(bunsButton).click();
-        isDisplayed = webDriver.findElement(activeBunsButton).isDisplayed();
+        isDisplayed = webDriver.findElement(bunsHeader).isDisplayed();
         Assert.assertTrue(isDisplayed);
     }
 
     @Step("Перейти в раздел Соусы")
     public void clickOnSaucesButton() {
         webDriver.findElement(saucesButton).click();
-        isDisplayed = webDriver.findElement(activeSaucesButton).isDisplayed();
+        isDisplayed = webDriver.findElement(saucesHeader).isDisplayed();
         Assert.assertTrue(isDisplayed);
     }
 
     @Step("Перейти в раздел Начинки")
     public void clickOnFillingsButton() {
         webDriver.findElement(fillingsButton).click();
-        isDisplayed = webDriver.findElement(activeFillingsButton).isDisplayed();
+        isDisplayed = webDriver.findElement(fillingsHeader).isDisplayed();
         Assert.assertTrue(isDisplayed);
     }
 }

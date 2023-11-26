@@ -42,7 +42,7 @@ public class UserRegistrationTest extends Setup {
     }
 
     @Test
-    @DisplayName("Вход по кнопке Войти на  странице регистрации")
+    @DisplayName("Вход по кнопке Войти на странице регистрации")
     public void LoginViaButtonOnRegistrationPageTest() {
         mainPage.clickOnProfileButton();
         registerPage = new RegisterPage(webDriver);
