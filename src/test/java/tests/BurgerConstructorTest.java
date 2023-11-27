@@ -9,7 +9,6 @@ public class BurgerConstructorTest extends Setup {
     @DisplayName("Проверка перехода в раздел Булки")
     public void bunsButtonActivityTest() {
         // Уходим с булок
-        mainPage.clickOnSaucesButton();
         // Открываем булки
         mainPage.clickOnBunsButton();
     }

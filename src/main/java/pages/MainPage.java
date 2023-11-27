@@ -65,6 +65,7 @@ public class MainPage {
 
     @Step("Перейти в раздел Булки")
     public void clickOnBunsButton() {
+        webDriver.findElement(saucesButton).click();
         webDriver.findElement(bunsButton).click();
         isDisplayed = webDriver.findElement(bunsHeader).isDisplayed();
         Assert.assertTrue(isDisplayed);
