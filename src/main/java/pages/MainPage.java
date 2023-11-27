@@ -17,15 +17,15 @@ public class MainPage {
     //Локатор кнопки "Булки" без фокуса на разделе
     private final By bunsButton = By.xpath("//div[span[text()='Булки']]");
     //Локатор кнопки "Булки" с фокусом на разделе
-    private final By bunsButtonSelected = By.xpath("//span[text()='Булки']");
+    private final By bunsButtonSelected = By.xpath("//*[@class=\"tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect\"]/span[text()='Булки']");
     //Локатор кнопки "Соусы" без фокуса на разделе
     private final By saucesButton = By.xpath("//div[span[text()='Соусы']]");
     //Локатор кнопки "Соусы" с фокусом на разделе
-    private final By saucesButtonSelected = By.xpath("//span[text()='Соусы']");
+    private final By saucesButtonSelected = By.xpath("//*[@class=\"tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect\"]/span[text()='Соусы']");
     //Локатор кнопки "Начинки" без фокуса на разделе
     private final By fillingsButton = By.xpath("//*[text()='Начинки']");
     //Локатор кнопки "Начинки" с фокусом на разделе
-    private final By fillingsButtonSelected = By.xpath("//span[text()='Начинки']");
+    private final By fillingsButtonSelected = By.xpath("//*[@class=\"tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect\"]/span[text()='Начинки']");
     // Локатор логотипа "Stellar Burgers"
     private final By logo = By.xpath("//div[@class = 'AppHeader_header__logo__2D0X2']");
 
